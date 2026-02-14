@@ -54,9 +54,6 @@ Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTIN
 
 This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
 
-## 📧 Contact
-
-Project Link: [https://github.com/yourusername/shiftbridge](https://github.com/RajParida/QuickHire)
 
 ## 🙏 Acknowledgments
 
