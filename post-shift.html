@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Shift — QuickHire</title>
+    <meta name="description"
+        content="Post open shifts for licensed barbers, estheticians, and beauty professionals. Fill your chairs in hours with QuickHire.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">⚡</div>
+                QuickHire
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="shifts.html">Find Shifts</a>
+                <a href="post-shift.html" class="active">Post a Shift</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="nav-cta">
+                <a href="post-shift.html" class="btn btn-primary btn-sm">Post a Shift</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Post a <span class="text-gradient">Shift</span></h1>
+            <p>Fill open positions fast. Post a shift and get qualified, license-verified applicants within hours.</p>
+        </div>
+    </div>
+
+    <!-- Form -->
+    <section class="section form-page" style="padding-top:40px;">
+        <div class="container">
+            <div class="form-container fade-up">
+
+                <!-- Step Indicators -->
+                <div class="form-steps">
+                    <div class="form-step active" data-step="0">
+                        <div class="form-step-number">1</div>
+                        <div class="form-step-label">Business</div>
+                    </div>
+                    <div class="form-step" data-step="1">
+                        <div class="form-step-number">2</div>
+                        <div class="form-step-label">Shift Info</div>
+                    </div>
+                    <div class="form-step" data-step="2">
+                        <div class="form-step-number">3</div>
+                        <div class="form-step-label">Review</div>
+                    </div>
+                </div>
+
+                <!-- Panel 1: Business Info -->
+                <div class="form-panel active" id="step-0">
+                    <h3 style="margin-bottom:var(--space-xl);">Business Information</h3>
+                    <div class="form-group">
+                        <label for="businessName">Business Name</label>
+                        <input type="text" id="businessName" placeholder="e.g. The Fade Room">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="businessCity">City</label>
+                            <input type="text" id="businessCity" placeholder="e.g. Brooklyn">
+                        </div>
+                        <div class="form-group">
+                            <label for="businessState">State</label>
+                            <select id="businessState">
+                                <option value="">Select state</option>
+                                <option>New York</option>
+                                <option>California</option>
+                                <option>Georgia</option>
+                                <option>Illinois</option>
+                                <option>Texas</option>
+                                <option>Florida</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="businessAddress">Street Address</label>
+                        <input type="text" id="businessAddress" placeholder="123 Main St">
+                    </div>
+                    <div class="form-group">
+                        <label for="businessPhone">Phone Number</label>
+                        <input type="tel" id="businessPhone" placeholder="(555) 123-4567">
+                    </div>
+                    <div class="form-actions">
+                        <div></div>
+                        <button class="btn btn-primary" data-next="1">Continue →</button>
+                    </div>
+                </div>
+
+                <!-- Panel 2: Shift Details -->
+                <div class="form-panel" id="step-1">
+                    <h3 style="margin-bottom:var(--space-xl);">Shift Details</h3>
+                    <div class="form-group">
+                        <label for="shiftTrade">Trade Needed</label>
+                        <select id="shiftTrade">
+                            <option value="">Select trade</option>
+                            <option>Barber</option>
+                            <option>Esthetician</option>
+                            <option>Hair Stylist</option>
+                            <option>Nail Technician</option>
+                            <option>Massage Therapist</option>
+                            <option>Cosmetologist</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="shiftDate">Date</label>
+                            <input type="date" id="shiftDate">
+                        </div>
+                        <div class="form-group">
+                            <label for="shiftPay">Pay Rate ($/hr)</label>
+                            <input type="number" id="shiftPay" placeholder="e.g. 45" min="15">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="shiftStart">Start Time</label>
+                            <input type="time" id="shiftStart">
+                        </div>
+                        <div class="form-group">
+                            <label for="shiftEnd">End Time</label>
+                            <input type="time" id="shiftEnd">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="shiftDesc">Shift Description</label>
+                        <textarea id="shiftDesc"
+                            placeholder="Describe the shift, expected duties, and any special requirements..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="shiftLicense">License Requirement</label>
+                        <select id="shiftLicense">
+                            <option>State License Required</option>
+                            <option>Cosmetology License</option>
+                            <option>Barber License</option>
+                            <option>Esthetician License</option>
+                            <option>Nail Technician License</option>
+                        </select>
+                    </div>
+                    <div class="form-actions">
+                        <button class="btn btn-outline" data-prev="0"
+                            style="border-color:rgba(7,6,0,0.2);color:var(--color-near-black);">← Back</button>
+                        <button class="btn btn-primary" data-next="2">Review Shift →</button>
+                    </div>
+                </div>
+
+                <!-- Panel 3: Review -->
+                <div class="form-panel" id="step-2">
+                    <h3 style="margin-bottom:var(--space-xl);">Review &amp; Post</h3>
+                    <p style="margin-bottom:var(--space-xl);">Here's a preview of how your shift will appear to
+                        professionals:</p>
+
+                    <!-- Preview Card -->
+                    <div class="shift-card" style="margin-bottom:var(--space-2xl);pointer-events:none;">
+                        <div class="shift-card-header">
+                            <div class="shift-business">
+                                <div class="shift-avatar">💈</div>
+                                <div>
+                                    <div class="shift-business-name">Your Business Name</div>
+                                    <div class="shift-business-location">📍 Your City, State</div>
+                                </div>
+                            </div>
+                            <span class="shift-badge new">New</span>
+                        </div>
+                        <div class="shift-title">Licensed Professional Needed</div>
+                        <div class="shift-meta">
+                            <div class="shift-meta-item">📅 Selected Date</div>
+                            <div class="shift-meta-item">🕐 Start – End Time</div>
+                        </div>
+                        <div class="shift-footer">
+                            <div class="shift-pay">$--<span>/hr</span></div>
+                            <span class="btn btn-primary btn-sm" style="opacity:0.6;">Apply Now</span>
+                        </div>
+                    </div>
+
+                    <div
+                        style="background:var(--gradient-card);border-radius:var(--radius-md);padding:var(--space-lg);margin-bottom:var(--space-xl);">
+                        <h4 style="margin-bottom:8px;">🚀 Boost Your Listing</h4>
+                        <p style="font-size:0.9rem;">Promoted shifts get <strong>3x more applicants</strong>. Add
+                            priority placement for just $9.99.</p>
+                        <label style="display:flex;align-items:center;gap:8px;margin-top:12px;cursor:pointer;">
+                            <input type="checkbox" style="width:18px;height:18px;accent-color:var(--color-primary);">
+                            <span style="font-weight:600;font-size:0.95rem;">Yes, boost this shift (+$9.99)</span>
+                        </label>
+                    </div>
+
+                    <div class="form-actions">
+                        <button class="btn btn-outline" data-prev="1"
+                            style="border-color:rgba(7,6,0,0.2);color:var(--color-near-black);">← Back</button>
+                        <button class="btn btn-coral btn-lg"
+                            onclick="alert('🎉 Shift posted successfully! You\'ll receive applicant notifications shortly.')">Post
+                            Shift 🚀</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <div class="logo-icon">⚡</div>
+                        QuickHire
+                    </a>
+                    <p>The gig-to-hire marketplace for licensed beauty &amp; barber professionals.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="TikTok">🎵</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Platform</h4>
+                    <a href="shifts.html">Find Shifts</a>
+                    <a href="post-shift.html">Post a Shift</a>
+                    <a href="how-it-works.html">How It Works</a>
+                    <a href="#">Pricing</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="about.html#contact">Contact</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Stay Updated</h4>
+                    <p style="font-size:0.9rem;color:rgba(247,247,255,0.5);margin-bottom:8px;">Get the latest shifts and
+                        news.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Your email" aria-label="Email address">
+                        <button type="submit" class="btn btn-primary btn-sm">→</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 QuickHire. All rights reserved.</p>
+                <div>
+                    <a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

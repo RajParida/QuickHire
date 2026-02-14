@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Shifts — QuickHire</title>
+    <meta name="description"
+        content="Browse available shifts for licensed barbers, estheticians, and beauty professionals. Pick up gigs near you and get paid fast.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">⚡</div>
+                QuickHire
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="shifts.html" class="active">Find Shifts</a>
+                <a href="post-shift.html">Post a Shift</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="nav-cta">
+                <a href="post-shift.html" class="btn btn-primary btn-sm">Post a Shift</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Find <span class="text-gradient">Available Shifts</span></h1>
+            <p>Browse open gigs near you. Filter by trade, date, and pay — then apply with one tap.</p>
+        </div>
+    </div>
+
+    <!-- Shifts Content -->
+    <section class="section shifts-page">
+        <div class="container">
+
+            <!-- Filter Bar -->
+            <div class="filter-bar fade-up">
+                <div class="filter-group">
+                    <label>Trade</label>
+                    <select>
+                        <option>All Trades</option>
+                        <option>Barber</option>
+                        <option>Esthetician</option>
+                        <option>Hair Stylist</option>
+                        <option>Nail Technician</option>
+                        <option>Massage Therapist</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Location</label>
+                    <select>
+                        <option>All Cities</option>
+                        <option>New York, NY</option>
+                        <option>Los Angeles, CA</option>
+                        <option>Atlanta, GA</option>
+                        <option>Chicago, IL</option>
+                        <option>Houston, TX</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Date</label>
+                    <input type="date">
+                </div>
+                <div class="filter-group">
+                    <label>Min Pay</label>
+                    <select>
+                        <option>Any</option>
+                        <option>$20/hr+</option>
+                        <option>$30/hr+</option>
+                        <option>$40/hr+</option>
+                        <option>$50/hr+</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary btn-sm">Search</button>
+            </div>
+
+            <div class="shifts-count fade-up">Showing <strong>8 shifts</strong> available near you</div>
+
+            <!-- Shift Cards Grid -->
+            <div class="shifts-grid">
+
+                <!-- Shift 1 -->
+                <div class="shift-card fade-up" data-delay="0">
+                    <div class="shift-card-header">
+                        <div class="shift-business">
+                            <div class="shift-avatar">💈</div>
+                            <div>
+                                <div class="shift-business-name">The Fade Room</div>
+                                <div class="shift-business-location">📍 Brooklyn, NY — 2.1 mi</div>
+                            </div>
+                        </div>
+                        <span class="shift-badge urgent">Urgent</span>
+                    </div>
+                    <div class="shift-title">Licensed Barber — Full Day Shift</div>
+                    <div class="shift-meta">
+                        <div class="shift-meta-item">📅 Tomorrow, Feb 15</div>
+                        <div class="shift-meta-item">🕐 9:00 AM – 6:00 PM</div>
+                        <div class="shift-meta-item">⭐ 4.9 (127 reviews)</div>
+                    </div>
+                    <div class="shift-footer">
+                        <div class="shift-pay">$45 <span>/hr</span></div>
+                        <a href="#" class="btn btn-primary btn-sm">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Shift 2 -->
+                <div class="shift-card fade-up" data-delay="100">
+                    <div class="shift-card-header">
+                        <div class="shift-business">
+                            <div class="shift-avatar">✨</div>
+                            <div>
+                                <div class="shift-business-name">GlowUp Studio</div>
+                                <div class="shift-business-location">📍 Manhattan, NY — 3.5 mi</div>
+                            </div>
+                        </div>
+                        <span class="shift-badge new">New</span>
+                    </div>
+                    <div class="shift-title">Esthetician — Afternoon Shift</div>
+                    <div class="shift-meta">
+                        <div class="shift-meta-item">📅 Feb 16, 2026</div>
+                        <div class="shift-meta-item">🕐 1:00 PM – 7:00 PM</div>
+                        <div class="shift-meta-item">⭐ 4.8 (89 reviews)</div>
+                    </div>
+                    <div class="shift-footer">
+                        <div class="shift-pay">$40 <span>/hr</span></div>
+                        <a href="#" class="btn btn-primary btn-sm">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Shift 3 -->
+                <div class="shift-card fade-up" data-delay="200">
+                    <div class="shift-card-header">
+                        <div class="shift-business">
+                            <div class="shift-avatar">💈</div>
+                            <div>
+                                <div class="shift-business-name">FreshCuts</div>
+                                <div class="shift-business-location">📍 Los Angeles, CA — 1.8 mi</div>
+                            </div>
+                        </div>
+                        <span class="shift-badge urgent">Urgent</span>
+                    </div>
+                    <div class="shift-title">Barber — Morning Walk-in Coverage</div>
+                    <div class="shift-meta">
+                        <div class="shift-meta-item">📅 Tomorrow, Feb 15</div>
+                        <div class="shift-meta-item">🕐 8:00 AM – 1:00 PM</div>
+                        <div class="shift-meta-item">⭐ 4.7 (204 reviews)</div>
+                    </div>
+                    <div class="shift-footer">
+                        <div class="shift-pay">$50 <span>/hr</span></div>
+                        <a href="#" class="btn btn-primary btn-sm">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Shift 4 -->
+                <div class="shift-card fade-up" data-delay="300">
+                    <div class="shift-card-header">
+                        <div class="shift-business">
+                            <div class="shift-avatar">💅</div>
+                            <div>
+                                <div class="shift-business-name">Luxe Beauty Bar</div>
+                                <div class="shift-business-location">📍 Atlanta, GA — 4.2 mi</div>
+                            </div>
+                        </div>
+                        <span class="shift-badge new">New</span>
+                    </div>
+                    <div class="shift-title">Nail Technician — Weekend Shift</div>
+                    <div class="shift-meta">
+                        <div class="shift-meta-item">📅 Feb 17, 2026</div>
+                        <div class="shift-meta-item">🕐 10:00 AM – 5:00 PM</div>
+                        <div class="shift-meta-item">⭐ 4.9 (156 reviews)</div>
+                    </div>
+                    <div class="shift-footer">
+                        <div class="shift-pay">$35 <span>/hr</span></div>
+                        <a href="#" class="btn btn-primary btn-sm">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Shift 5 -->
+                <div class="shift-card fade-up" data-delay="400">
+                    <div class="shift-card-header">
+                        <div class="shift-business">
+                            <div class="shift-avatar">💈</div>
+                            <div>
+                                <div class="shift-business-name">BarberKing</div>
+                                <div class="shift-business-location">📍 Chicago, IL — 2.7 mi</div>
+                            </div>
+                        </div>
+                        <span class="shift-badge new">New</span>
+                    </div>
+                    <div class="shift-title">Senior Barber — Full Day</div>
+                    <div class="shift-meta">
+                        <div class="shift-meta-item">📅 Feb 18, 2026</div>
+                        <div class="shift-meta-item">🕐 9:00 AM – 7:00 PM</div>
+                        <div class="shift-meta-item">⭐ 4.6 (92 reviews)</div>
+                    </div>
+                    <div class="shift-footer">
+                        <div class="shift-pay">$42 <span>/hr</span></div>
+                        <a href="#" class="btn btn-primary btn-sm">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Shift 6 -->
+                <div class="shift-card fade-up" data-delay="500">
+                    <div class="shift-card-header">
+                        <div class="shift-business">
+                            <div class="shift-avatar">🧖</div>
+                            <div>
+                                <div class="shift-business-name">SkynLab</div>
+                                <div class="shift-business-location">📍 Houston, TX — 3.1 mi</div>
+                            </div>
+                        </div>
+                        <span class="shift-badge urgent">Urgent</span>
+                    </div>
+                    <div class="shift-title">Esthetician — Facial Specialist</div>
+                    <div class="shift-meta">
+                        <div class="shift-meta-item">📅 Tomorrow, Feb 15</div>
+                        <div class="shift-meta-item">🕐 11:00 AM – 6:00 PM</div>
+                        <div class="shift-meta-item">⭐ 5.0 (73 reviews)</div>
+                    </div>
+                    <div class="shift-footer">
+                        <div class="shift-pay">$55 <span>/hr</span></div>
+                        <a href="#" class="btn btn-primary btn-sm">Apply Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-card fade-up">
+                <h2>Don't See Your Perfect Shift?</h2>
+                <p>Create a profile and turn on notifications. We'll alert you the moment a matching shift is posted.
+                </p>
+                <a href="#" class="btn btn-dark btn-lg">Create Free Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <div class="logo-icon">⚡</div>
+                        QuickHire
+                    </a>
+                    <p>The gig-to-hire marketplace for licensed beauty &amp; barber professionals.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="TikTok">🎵</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Platform</h4>
+                    <a href="shifts.html">Find Shifts</a>
+                    <a href="post-shift.html">Post a Shift</a>
+                    <a href="how-it-works.html">How It Works</a>
+                    <a href="#">Pricing</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="about.html#contact">Contact</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Stay Updated</h4>
+                    <p style="font-size:0.9rem;color:rgba(247,247,255,0.5);margin-bottom:8px;">Get the latest shifts and
+                        news.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Your email" aria-label="Email address">
+                        <button type="submit" class="btn btn-primary btn-sm">→</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 QuickHire. All rights reserved.</p>
+                <div>
+                    <a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
